@@ -38,26 +38,28 @@
   - besser: liste für das eigene subsystem
 
 * 6 Patches bauen und senden mit git-send-email
-** perl /scripts/checkpatch anwenden
+  - perl /scripts/checkpatch anwenden
 
-** Maintainer finden mit: perl /scripts/get_maintainer -f <filename>
+  - Maintainer finden mit: perl /scripts/get_maintainer -f <filename>
 
-** Erst commiten in lokales repo
+  - Erst commiten in lokales repo
 
-** Senden mit git send-email
-
-  - Demo:
-    - siehe meine shell history
-    - gitconfig zeigen
+  - Senden mit git send-email
+    - Demo:
+      - shellbefehl: ```git send-email -1 --subject-prefix="PATCH net"  --to=richi235@arcor.de```
+        - -1 : sendet 1 commit (1 rückwärts von HEAD)
+        - --to= an ... , bei mehreren Empfängern mehrere "--to="
+      - .gitconfig zeigen
+        - der verwendete mail server usw stehen hier
+        - muss auf jeden fall vorher konfiguriert werden
+    - Gutes tutorial zu git send-email: https://burzalodowa.wordpress.com/2013/10/05/how-to-send-patches-with-git-send-email/
   - Wichtig:
-    - immer erst zum testen an sich selber schicken
-
+    - immer erst zum testen an sich selber schick
 * 7 Buchempfehlungen und gute Quellen
 
 ** Gute Bücher:
-*** Operating Systems (Design and Implementation) Andrew Tannenbaum
-*** Das C Buch von Oreily
-
+   - Operating Systems (Design and Implementation) Andrew Tannenbaum
+   - Das C Buch von O'reily
 ** Online Quellen
 *** Viel lesen
 *** Goooooogeln!!!!!!!!!!!!!!
