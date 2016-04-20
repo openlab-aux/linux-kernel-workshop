@@ -36,7 +36,26 @@
      #+NAME:  graph_of_branches
      [[./graph_of_branches.png]]
 
+    - *subsystem-specific-repos*
+      - Haben alle einen eigenen Maintainer manche sogar mehr
+      - Beispiele: net, mm, virt, xen usw.
+      - Dort senden die Developer ihre patches hin
+      - Diese Maintainer schicken regelmäßig pull requests an linus torvalds
+        - mit git request-pull :p sendet auch eine Email
 
+    - *linux-next*
+      - Da wird einfach nur täglich alles neue aus allen subsystem repos reingemüllt
+      - um zu sehen was bricht und was nicht
+      - wird nicht produktiv verwendet ist nur "indikator" für die anderen developer
+    - *main-kernel-tree*
+      - wird von linus torvalds gemaintaint
+      - er holt sich hin und wieder änderungen aus den subsystemen nachdem sie da ein paar tage lagen und
+        - die maintainer ihm pull requests gesendet haben (per email^^)
+
+    - *stable-kernel-tree*
+      - wird von greg-kroah-hartmann gemaintaint
+      - er holt sich regelmäßig den code aus dem main-kernel-tree
+      - und kümmert sich um patches etc.
 
   - Live demo:
     - 1-2 remotes auschecken
