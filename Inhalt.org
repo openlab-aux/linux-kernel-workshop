@@ -20,14 +20,21 @@
 ** Was kann ich nach dem kurs realistisch was nicht
 
 
-* 2 Die Repos und der Entwicklungsprozess
-  - git.kernel.org
+* 2 Die Repos, Kernelversionen und der Entwicklungsprozess
+  - Alle gitrepos sind einsehbar auf http://git.kernel.org (cgit webinterface)
   - ui es gibt verschiedene repos wie läuft das?
-    - bild von entwicklungsprozess
-  - 1-2 remotes auschecken
-  - (alles in ein repo)
+    - Es gibt nicht ein repo und viele branches sondern für jeden "branch" ein eigenes repo
+    - also:
+      - ein net repo
+      - ein stable repo
+      - ein mainline repo
+      - ein kvm repo
+      - usw.
+  - Live demo:
+    - 1-2 remotes auschecken
+    - Man kann problemlos in einem repo mehrere remotes verwenden und damit produktiv arbeiten
   - es gibt releases alles 6-7 Wochen (Wie 4.3 4.4 usw.)
-  - Das läuft so
+  - Das läuft so (*Entwicklungsprozess*)
     - Zu Beginn: merge window (2 wochen): linux torvalds halt alles
     - dann fixes (rc1 , rc2 usw.)
       - meistens bis rc7
