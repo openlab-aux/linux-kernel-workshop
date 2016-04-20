@@ -1,5 +1,5 @@
 * 0 Über diese Online Version
-  - Diese org mode "präsentation" habe ich für den Workshop auf dem Linux Info Tag 2016 in der FH Augsburg verwendet
+  - Diese org mode "präsentation" habe ich für den Workshop auf dem Linux Info Tag 2016 in der Hochschule Augsburg verwendet
   - Ein großer Teil des Workshops bestand aus live demos und "Quellcode zusammen anschauen und besprechen"
   - Dementsprechend fehlen diese Teile hier in den "Folien" oder es steht da nur "live-demo" und es ist an einigen stellen etwas unvollständig
   - Einige Teilnehmer haben mich dennoch gefragt ob ich diese minimalistische Präsentation zum Nachschauen veröffentlichen kann
@@ -14,7 +14,7 @@
 ** Wer bin ich
    - Richard Sailer
 ** Warum linux kernel entwicklung
-** kann ich da einfach so mittmachen?
+** kann ich da einfach so mitmachen?
    - ja
 
 ** Was kann ich nach dem kurs realistisch was nicht
@@ -63,7 +63,7 @@
   - es gibt releases alles 6-7 Wochen (Wie 4.3 4.4 usw.)
   - Das läuft so (*Entwicklungsprozess*)
     - Zu Beginn: merge window (2 wochen): linux torvalds halt alles
-    - dann fixes (rc1 , rc2 usw.)
+    - dann fixes (rc1, rc2 usw.)
       - meistens bis rc7
     - dann irgendwann final release 4.3
     - Entwicklungsprozess ist auch nochmal beschrieben in ~Documentation/networking/netdev-FAQ.txt~
@@ -139,7 +139,7 @@
 *** Viel lesen
 *** Goooooogeln!!!!!!!!!!!!!!
     - erst wenn man nach 10-15 min nichts gefunden hat
-      - die weiteren quellen ankucken
+      - die weiteren quellen angucken
 
 *** In Documentation Ordner vom Kernel Schauen!
 
