@@ -73,8 +73,11 @@
      - Oft gibt es einen Ordner für das Subsystem an dem man werkelt, mit einer faq file drin
 
 * 4 Kompilieren und Testen
+- Live demo: ~make menuconfig~ mit Erklärungen
 - ~make~
 - ~make deb-pkg~
+- dauert ca. 30-45 min
+  - je nach HDD|SSD und CPU/laptop
 
 * 5 Die Mailinglisten
   - live-demo was da so abgeht
