@@ -1,0 +1,84 @@
+* 1 Einleitung
+** Überblick über Vortrag
+** Wer bin ich
+   - Richard Sailer
+** Warum linux kernel entwicklung
+** was ist linux kernel entwicklung
+** kann ich da einfach so mittmachen?
+   - ja
+
+** Was kann ich nach dem kurs realistisch was nicht
+
+
+* 2 Die Repos und der Entwicklungsprozess
+  - git.kernel.org
+  - ui es gibt verschiedene repos wie läuft das?
+    - bild von entwicklungsprozess
+  - 1-2 remotes auschecken
+  - (alles in ein repo)
+  - es gibt releases alles 6-7 Wochen (Wie 4.3 4.4 usw.)
+  - Das läuft so
+    - Zu Beginn: merge window (2 wochen): linux torvalds halt alles
+    - dann fixes (rc1 , rc2 usw.)
+      - meistens bis rc7
+    - dann irgendwann final release 4.3
+
+
+* 3 Der Sourcecode (Überblick)
+  - kurz erzählen was die ganzen unterordner bedeuten
+  - in netzwerk ordner rein gehen und code editieren
+
+* 4 Kompilieren und Testen
+- make
+- make deb-pkg
+
+* 5 Die Mailinglisten
+  - kucken was da so abgeht
+  - kurz über lkml reden: lieber nicht (200-300 Mails pro Tag)
+  - besser: liste für das eigene subsystem
+
+* 6 Patches bauen und senden mit git-send-email
+** perl /scripts/checkpatch anwenden
+
+** Maintainer finden mit: perl /scripts/get_maintainer -f <filename>
+
+** Erst commiten in lokales repo
+
+** Senden mit git send-email
+
+  - Demo:
+    - siehe meine shell history
+    - gitconfig zeigen
+  - Wichtig:
+    - immer erst zum testen an sich selber schicken
+
+* 7 Buchempfehlungen und gute Quellen
+
+** Gute Bücher:
+*** Operating Systems (Design and Implementation) Andrew Tannenbaum
+*** Das C Buch von Oreily
+
+** Online Quellen
+*** Viel lesen
+*** Goooooogeln!!!!!!!!!!!!!!
+    - erst wenn man nach 10-15 min nichts gefunden hat
+      - die weiteren quellen ankucken
+
+*** Im Doc Ordner Schauen
+
+*** Kernel Newbies Mailing liste
+    - zeigen (in thunderbird)
+*** Kernelnewbies irc channel
+    - zeigen
+    - sehr freundliche menschen da
+
+*** Quellcode lesen
+**** Pro
+     - kann jede frage beantworten
+     - maximale genauigkeit
+**** Contra
+     - sehr zeitintensiv
+     - oft zu genau, man hätte es gerne "zusammengefasst" oder "abstrahiert"
+
+
+* 8 Fragen und Zeitpuffer
