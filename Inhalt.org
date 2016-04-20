@@ -1,9 +1,9 @@
 * 1 Einleitung
 ** Überblick über Vortrag
+   - einmal das inhaltsverzeichnis zeigen, kurz zusammenfassung
 ** Wer bin ich
    - Richard Sailer
 ** Warum linux kernel entwicklung
-** was ist linux kernel entwicklung
 ** kann ich da einfach so mittmachen?
    - ja
 
@@ -25,9 +25,22 @@
 
 
 * 3 Der Sourcecode (Überblick)
-  - kurz erzählen was die ganzen unterordner bedeuten
-  - in netzwerk ordner rein gehen und code editieren
-  - verwendete demo war: ~net/ipv4/tcp_timer.c~
+  - Kurz erzählen was die ganzen unterordner bedeuten
+    - ~mm/~ ist memory managment
+    - ~net/~ ist der network code
+    - ~kernel/~ enthält scheduler und alles was auch in einem micro kernel system teil vom kernel wäre
+    - ~fs~ ist filesystem
+    - usw.
+  - in netzwerk ordner rein gehen und code anschauen/erklären
+    - verwendete demo war: ~net/ipv4/tcp_timer.c~
+    - insbesondere der Retransmission timer
+
+** Der Documentation Unterordner
+   - grundsätzlich gilt: doku lesen ist einfacher als Code lesen
+   - wichtige files für Einsteiger:
+     - ~SubmittingPatches~
+     - ~README~
+     - Oft gibt es einen Ordner für das Subsystem an dem man werkelt, mit einer faq file drin
 
 * 4 Kompilieren und Testen
 - ~make~
@@ -50,7 +63,7 @@
     - Demo:
       - shellbefehl: ~git send-email -1 --subject-prefix="PATCH net"  --to=richi235@arcor.de~
         - ~-1~ : sendet 1 commit (1 rückwärts von HEAD)
-        - ~--to=~ an ... , bei mehreren Empfängern mehrere ~--to=~
+        - ~--to=~ legt Empfänger fest, bei mehreren Empfängern mehrere ~--to=~
       - .gitconfig gezeigt
         - der verwendete mail server usw stehen hier
         - muss auf jeden fall vorher konfiguriert werden
@@ -68,13 +81,14 @@
     - erst wenn man nach 10-15 min nichts gefunden hat
       - die weiteren quellen ankucken
 
-*** Im Doc Ordner Schauen
+*** In Documentation Ordner vom Kernel Schauen!
 
 *** Kernel Newbies Mailing liste
     - zeigen (in thunderbird)
 *** Kernelnewbies irc channel
     - zeigen
     - sehr freundliche menschen da
+    - nur fragen stellen wenn man vorher schon mal 10-15 min gegoogelt/gesucht hat und nix gefunden hat!
 
 *** Quellcode lesen
 **** Pro
