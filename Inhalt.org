@@ -27,15 +27,17 @@
 * 3 Der Sourcecode (Überblick)
   - kurz erzählen was die ganzen unterordner bedeuten
   - in netzwerk ordner rein gehen und code editieren
+  - verwendete demo war: `net/ipv4/tcp_timer.c`
 
 * 4 Kompilieren und Testen
-- make
-- make deb-pkg
+- `make`
+- `make deb-pkg`
 
 * 5 Die Mailinglisten
-  - kucken was da so abgeht
+  - live-demo was da so abgeht
+    - gezeigt wurde hauptsächlich netdev
   - kurz über lkml reden: lieber nicht (200-300 Mails pro Tag)
-  - besser: liste für das eigene subsystem
+  - für eigene patches besser: liste für das eigene subsystem
 
 * 6 Patches bauen und senden mit git-send-email
   - perl /scripts/checkpatch anwenden
@@ -46,10 +48,10 @@
 
   - Senden mit git send-email
     - Demo:
-      - shellbefehl: ```git send-email -1 --subject-prefix="PATCH net"  --to=richi235@arcor.de```
-        - -1 : sendet 1 commit (1 rückwärts von HEAD)
-        - --to= an ... , bei mehreren Empfängern mehrere "--to="
-      - .gitconfig zeigen
+      - shellbefehl: `git send-email -1 --subject-prefix="PATCH net"  --to=richi235@arcor.de`
+        - `-1` : sendet 1 commit (1 rückwärts von HEAD)
+        - `--to=` an ... , bei mehreren Empfängern mehrere `--to=`
+      - .gitconfig gezeigt
         - der verwendete mail server usw stehen hier
         - muss auf jeden fall vorher konfiguriert werden
     - Gutes tutorial zu git send-email: https://burzalodowa.wordpress.com/2013/10/05/how-to-send-patches-with-git-send-email/
