@@ -30,6 +30,14 @@
       - ein mainline repo
       - ein kvm repo
       - usw.
+  - Zusammenhang der Repos (sehr vereinfacht): 
+
+     #+CAPTION: Die verschiedenen Linux Kernel Repos und wie sie zusammenhängen (sehr vereinfacht)
+     #+NAME:  graph_of_branches
+     [[./graph_of_branches.png]]
+
+
+
   - Live demo:
     - 1-2 remotes auschecken
     - Man kann problemlos in einem repo mehrere remotes verwenden und damit produktiv arbeiten
