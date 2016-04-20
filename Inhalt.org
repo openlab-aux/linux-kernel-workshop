@@ -27,11 +27,11 @@
 * 3 Der Sourcecode (Überblick)
   - kurz erzählen was die ganzen unterordner bedeuten
   - in netzwerk ordner rein gehen und code editieren
-  - verwendete demo war: `net/ipv4/tcp_timer.c`
+  - verwendete demo war: ~net/ipv4/tcp_timer.c~
 
 * 4 Kompilieren und Testen
-- `make`
-- `make deb-pkg`
+- ~make~
+- ~make deb-pkg~
 
 * 5 Die Mailinglisten
   - live-demo was da so abgeht
@@ -40,17 +40,17 @@
   - für eigene patches besser: liste für das eigene subsystem
 
 * 6 Patches bauen und senden mit git-send-email
-  - perl /scripts/checkpatch anwenden
+  - ~perl /scripts/checkpatch~ anwenden
 
-  - Maintainer finden mit: perl /scripts/get_maintainer -f <filename>
+  - Maintainer finden mit: ~perl /scripts/get_maintainer -f <filename>~
 
   - Erst commiten in lokales repo
 
-  - Senden mit git send-email
+  - Senden mit ~git send-email~
     - Demo:
-      - shellbefehl: `git send-email -1 --subject-prefix="PATCH net"  --to=richi235@arcor.de`
-        - `-1` : sendet 1 commit (1 rückwärts von HEAD)
-        - `--to=` an ... , bei mehreren Empfängern mehrere `--to=`
+      - shellbefehl: ~git send-email -1 --subject-prefix="PATCH net"  --to=richi235@arcor.de~
+        - ~-1~ : sendet 1 commit (1 rückwärts von HEAD)
+        - ~--to=~ an ... , bei mehreren Empfängern mehrere ~--to=~
       - .gitconfig gezeigt
         - der verwendete mail server usw stehen hier
         - muss auf jeden fall vorher konfiguriert werden
