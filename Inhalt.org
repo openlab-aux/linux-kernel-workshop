@@ -1,3 +1,13 @@
+* 0 Über diese Online Version
+  - Diese org mode "präsentation" habe ich für den Workshop auf dem Linux Info Tag 2016 in der FH Augsburg verwendet
+  - Ein großer Teil des Workshops bestand aus live demos und "Quellcode zusammen anschauen und besprechen"
+  - Dementsprechend fehlen diese Teile hier in den "Folien" oder es steht da nur "live-demo" und es ist an einigen stellen etwas unvollständig
+  - Einige Teilnehmer haben mich dennoch gefragt ob ich diese minimalistische Präsentation zum Nachschauen veröffentlichen kann
+  - Deswegen ist sie jetzt hier auf Github
+  - Aber ohne Garantie auf Vollständigkeit
+  - Ergänzungen in Form von Pull requests werden aber gerne angenommen und gemerged
+
+
 * 1 Einleitung
 ** Überblick über Vortrag
    - einmal das inhaltsverzeichnis zeigen, kurz zusammenfassung
@@ -22,6 +32,19 @@
     - dann fixes (rc1 , rc2 usw.)
       - meistens bis rc7
     - dann irgendwann final release 4.3
+    - Entwicklungsprozess ist auch nochmal beschrieben in ~Documentation/networking/netdev-FAQ.txt~
+    - Wenn man es genau wissen möchte:
+      - Files in ~Documentation/development-process/~ lesen
+      - zu jeder stage gibt es eine file
+    - Wichtig für Developer: keine patches während merge window zeit and die maintainer schicken
+      - Da haben die extrem viel zu tun und ignorieren alles
+    - auch von den meisten subsystemen gibt es ein stable und ein ~-next~ repo
+      - Beispiel:
+        - net (kleine änderungen und features)
+        - net-next (kommt in das nächste merge window zum neuen release, neue features)
+    - Als developer sollte man wissen ob der eigene patch für das stable oder das ~-next~ repo ist
+      - und das dementsprechend in die commit message schreiben
+        - siehe ~SubmittingPatches~-File für Details über Commit message und repo annotations
 
 
 * 3 Der Sourcecode (Überblick)
